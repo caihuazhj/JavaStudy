@@ -7,10 +7,13 @@ package InnerClassExercise;
  * initialize a reference to an Inner.
  */
 public class Outer {
-     class Inner{
+    String s ="11";
+     private class Inner{
         Inner(){
-            System.out.println("Inner");
+            System.out.println("Inner"
+            );
         }
+
      }
      //无参构造
 //    Outer() {
@@ -19,11 +22,16 @@ public class Outer {
     Inner CreateInner(){
         return new Inner();
     }
+    public void ss(){
+        System.out.println("woaijingjing");
+    }
 
     public static void main(String[] args) {
         Outer outer = new Outer();
         Inner inner = outer.CreateInner();
 
         Outer.Inner inner1 = outer.CreateInner();
+
+
     }
 }

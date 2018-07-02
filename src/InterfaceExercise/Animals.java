@@ -1,5 +1,7 @@
 package InterfaceExercise;
 
+import java.util.ArrayList;
+
 public interface Animals {
     public void eat(Object object);
 
