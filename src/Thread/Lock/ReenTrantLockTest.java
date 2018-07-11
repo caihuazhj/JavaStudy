@@ -10,7 +10,7 @@ public class ReenTrantLockTest {
     }
 
     public static void main(String[] args) {
-        // 初始化可重入锁
+        // 初始化可重入锁 保证第二个线程不会在第一个线程释放锁之前得到锁
         final Lock lock = new ReentrantLock();
 
         final Condition reachThreeCondition = lock.newCondition();
