@@ -60,8 +60,8 @@ public class SimpleproxyDemo{
 // Insert a proxy and call again:
 //        public static Object newProxyInstance(ClassLoader loader,Class<?>[] interfaces,InvocationHandler h)
        Interface proxy = (Interface) Proxy.newProxyInstance(
-                Interface.class.getClassLoader(),//类加载器
-                new Class[]{ Interface.class },//希望实现代理的接口列表
+                Interface.class.getClassLoader(),
+                new Class[]{ Interface.class },//希望实现代理的接口列表,//类加载器
                 new DynamicProxyHandler(real));//InvocationHandler接口的实现
         consumer(proxy);
     }
