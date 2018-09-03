@@ -21,6 +21,5 @@ public class Apply {
             System.out.println(a[i]);
 
         }
-
     }
 }

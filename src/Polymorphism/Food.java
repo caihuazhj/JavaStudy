@@ -1,6 +1,10 @@
 package Polymorphism;
 
+import java.util.HashMap;
+
 public class Food {
+    HashMap
+    hashMapashMap
     String name;
 
     public String getName() {
